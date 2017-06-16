@@ -1,0 +1,36 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    You can see right away which line has been modified/removed/added, therefore reducing the search time by a significant amount. Looking at just those selected lines allow you to make sense of the changes and narrow down which one(s) actually caused the bug.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Knowing the history allows you to see how the file evolved over time and you are able to interact directly with the timeline and roll back changes as you wish. This is a much better perdicament than having no history and losing track of all the previous changes. It wouldn't be so bad normally, but if you had made a fatal error in the file and are unable to recover those mistakes then you're DOOOMED!!!
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    PROS - you can save only when you are ready
+    CONS - if you do not track the file, you may lose the changes
+    PROS - committing early and often allows you to see the errors before it's too late
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    In software development it is very likely that you will be using dependencies e.g. HTML and CSS, committing them together allows for a more complete image of what's going on at the time as opposed to seeing just one file and not another. Essentially it creates a picture-perfect snapshot in time.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log allows you to see commit comments
+    git diff allows you to see the difference between two files
+
+How might using version control make you more confident to make changes that
+could break something?
+
+   Much like the undo/redo features in Microsoft Office and the Back button in the browser, having the ability to rewind your mistake allows you to be more bold with making new changes with programming.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+   Make some awesome Apps and make money biatch!!!!

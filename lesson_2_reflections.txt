@@ -1,0 +1,7 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+Using the git init command will create a hidden .git folder where all the history of changes made to all files in that directory will be tracked. Initializing git allows user to interact with all the git command lines e.g. git status, git checkout
+
+How is the staging area different fromt he working directory and the repository? What value do you think it offers?
+
+Staging area helps with tracking changes that are being made to the files but the image of the current state is not yet "saved" through a commit. It helps to provide a QC area where reviewed and approved files are staged and are labeled ready to be committed. This allows you to split the work being done in the repository into separate commits, you don't have to commit all the files at once.

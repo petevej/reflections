@@ -5,3 +5,25 @@ Using the git init command will create a hidden .git folder where all the histor
 How is the staging area different fromt he working directory and the repository? What value do you think it offers?
 
 Staging area helps with tracking changes that are being made to the files but the image of the current state is not yet "saved" through a commit. It helps to provide a QC area where reviewed and approved files are staged and are labeled ready to be committed. This allows you to split the work being done in the repository into separate commits, you don't have to commit all the files at once.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+As long as only one logical change gets added to the staging area, you will only commit that change and nothing else. 
+
+What ar esome situations where branches would be helpful in keeping your history organized? How would branches help?
+
+Branches are extremely handy if you're working on a completely different version of the same project and would like to branch out e.g. hard-mode vs. easy-mode. They're also very convenient for creating a new feature for the project in the instances where you don't necessarily want to merge the changes back into the master branch just yet...in case it doesn't get approved for production.
+
+How do the diagrams help you visualize the branch structure?
+
+The tree diagram works similarly to the subway map, only it is reachable in only one direction, which is upstream. If a commit has different parents/ancestors, they cannot reach each other. If we are in a Detached HEAD state, commits made there will not be reachable from anywhere else on the tree, unless we run "git checkout -b branch_name" which will help with creating a new branch to the commit. Visualization with the diagram really comes in handy when you want to look at where are all the different nodes and how they merge or diverge from each other.
+
+What is the result of merging two branches together? Why do we represent it int he diagram the way we do?
+
+Merging two branches does a couple of things. One is it removes the branch label of the non-main branch. It also combines the changes made on both branches in a logical manner by paying attention to what was intentionally removed/added. Because it does not ignore the changes made on both, the merged branch is shown on the diagram as an additional commit that reaches back to both branches' tips. 
+
+What are the pros and cons of Git's autmoatic merging vs. always doing merges manually?
+
+Pros: save time
+
+Cons: it could make mistakes if the author was not there to help sort out the conflicts
